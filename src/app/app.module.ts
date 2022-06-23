@@ -3,14 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BarChartComponent } from './bar-chart/bar-chart.component';
+import { ChartsModule } from 'ng2-charts';
+import { BarrasDobleComponent } from './barras-doble/barras-doble.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BarChartComponent,
+    BarrasDobleComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
